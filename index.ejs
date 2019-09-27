@@ -1,0 +1,18 @@
+<div class="container"> 
+    <!-- page body //--> 
+    <!-- One card per Blog snippet, which is read from the blog/_data.json file -->
+    <% for(var varBlog in public.blog._data) { %>
+        <div class="row m-t-3"> 
+            <div class="col-md-9"> 
+                <div class="card "> 
+                    <div class="card-block"> 
+                        <a href="blog/<%= varBlog %>" class="btn btn-primary"><h4 class="card-title"><%= public.blog._data[varBlog].pageTitle %></h4></a>
+                        <p><small>Posted by <a href="#"><%= public.blog._data[varBlog].author %></a> on <%= public.blog._data[varBlog].date %> in <a href="#">Category</a></small></p> 
+                        <p class="card-text"><%= public.blog._data[varBlog].snippet %></p> 
+                    </div> 
+                </div> 
+            </div> 
+        </div> 
+    <% }; %>
+    <!-- End of One card per Blog snippet -->
+</div> 
