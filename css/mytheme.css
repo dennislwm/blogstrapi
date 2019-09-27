@@ -1,0 +1,24 @@
+/* Footer flushed at bottom of page */
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    margin-bottom: 60px; /* Margin bottom by footer height */
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    height: 60px; /* Set the fixed height of the footer here */
+    line-height: 60px; /* Vertically center the text there */
+}
+/* End of Footer */
+
+/* Cards */
+.card {
+    border: none /* Remove border around cards */
+}
+.card-block {
+    padding-bottom: 50px /* Padding between cards */
+}
+/* End of Cards */
