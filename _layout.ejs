@@ -10,14 +10,16 @@
  
     <!-- Bootstrap CSS first, then Mytheme CSS --> 
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/mytheme.css">
   </head> 
   <body> 
  
-    <%- partial("partial/_header") %> 
+    <%- partial("layout/_header") %> 
  
-    <%- yield %> 
- 
-    <%- partial("partial/_footer") %> 
+    <%- yield %>
+
+    <%- partial("layout/_footer") %> 
  
     <!-- jQuery first, then Bootstrap JS. --> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> 
