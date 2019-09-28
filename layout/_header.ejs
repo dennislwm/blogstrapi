@@ -2,7 +2,7 @@
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <a class="navbar-brand" href="#"><h2>dennislwm/bootstrapi</h2></a>
+  <a class="navbar-brand" href="/index.html"><h2>Dennis Lee</h2></a>
 
   <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
     <div class="input-group  pull-xs-right">
@@ -14,9 +14,9 @@
       </div>
     </div>
     <div class="navbar-nav float-left text-left pr-3">
-      <a class="nav-item nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link" href="about.html">About</a>
-      <a class="nav-item nav-link" href="contact.html">Contact</a>
+      <a class="nav-item nav-link <%- current.source == 'index' ? 'active' : '' %>" href="/index.html">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link <%- current.source == 'about' ? 'active' : '' %>" href="/about.html">About</a>
+      <a class="nav-item nav-link" href="https://github.com/dennislwm" target="_blank">GitHub</a>
     </div>
   </div>
 </nav>
