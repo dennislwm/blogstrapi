@@ -1,0 +1,42 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+  <head> 
+    <!-- Required meta tags always come first --> 
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+    <meta http-equiv="x-ua-compatible" content="ie=edge"> 
+ 
+    <title><%- pageTitle %> | <%- siteTitle %></title> 
+ 
+    <!-- Bootstrap CSS first, then Mytheme CSS --> 
+    <!-- Change relative path for both CSS and JS files below -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/mytheme.css">
+  </head> 
+  <body> 
+ 
+    <%- partial("../layout/_header") %> 
+ 
+    <!-- Variable yield outputs the content of each Markdown blog file ".md" wrapped in a Card class -->
+    <!-- We use the same Card container as in index.ejs, without the Button link and no iteration -->
+    <div class="container"> 
+      <div class="row m-t-3"> 
+          <div class="col-md-9"> 
+              <div class="card "> 
+                  <div class="card-block"> 
+                          <%- yield %>
+                  </div> 
+              </div> 
+          </div> 
+      </div> 
+    </div>     
+    <!-- End of Card -->
+
+    <%- partial("../layout/_footer") %> 
+ 
+    <!-- jQuery first, then Bootstrap JS. --> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> 
+    <script src="../js/bootstrap.min.js"></script> 
+  </body> 
+</html> 
