@@ -2,29 +2,33 @@
 Personal blog using a Dynamic CMS for development with a Static HTML for deployment.
 
 ---
-### About blogstrapi
+## About blogstrapi
 **blogstrapi** was a personal project to create a GUI **head** that is modular, which can be developed with any "Headless" CMS backend.
 
 ![Index page](https://snipboard.io/wuN75Z.jpg)
 
 ---
-#### Responsive and Fast
+### Responsive and Fast
 The GUI is developed using Bootstrap 4 and Harp.js, which supports EJS. The navigation menu collapses, when viewed on a mobile device, into a *hamburger* menu.
 
 ![Viewed on a mobile device](https://snipboard.io/GliKR3.jpg)
 
 ---
-#### Modular
+### Modular
 Partials that contain embeddable code are stored in the *layout* folder, e.g. *_header.ejs*.
 
 ---
-#### Head
+### Head
 Blog articles are stored as *markdown* files in the *blog/* folder, while their metadata are stored in *_data.json* within the same folder. Harp generates one *html* per *markdown* file.
 
 The index page dynamically populates all articles' snippets from the *metadata* stored in *blog/_data.json*.
 
 ---
-### Project Structure
+## Blog
+This is my [blog](http://blog.tldr.pro), which is based on the this template, and it has a [tutorial](http://tldr.pro/blog/blog/creating-a-blog-theme-with-bootstrap-and-harp.html) explaining how **bootstrapi** was developed.
+
+---
+## Project Structure
      blogstrapi/                 <-- Root of your project
        |- package.json           <-- Node.js project entries
        |- _harp.json             <-- Global variables goes here
@@ -44,7 +48,7 @@ The index page dynamically populates all articles' snippets from the *metadata* 
           |- _layout.ejs         <-- Layout for each article in blog/ folder
 
 ---
-### Example Usage
+## Example Usage
 In the following example, the default application will be created in the folder *myproject/*.
 
      $ harp init myproject --boilerplate dennislwm/blogstrapi
@@ -54,9 +58,9 @@ In the folder *myproject/*, spin up the server, which can be viewed at [localhos
      $ harp server
 
 ---
-### Reach Out!
+## Reach Out!
 Please consider giving this repository a star on GitHub.
 
 ---
-### License
+## License
 The **blogstrapi** source code is licensed under the [GPL-3.0 license](https://github.com/dennislwm/blogstrapi/blob/master/LICENSE).
